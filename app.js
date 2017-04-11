@@ -61,6 +61,8 @@ app.get("/items/new", function(req, res){
 
 //editar
 app.get("/procura/:id/editar", function(req, res){
+    var id = req.body.id;
+    var url = "http://localhost:50513/api/product/" + id
     request(url, function(error, response, body){
         if(!error && response.statusCode == 200){
             var data = JSON.parse(body)

@@ -9,8 +9,15 @@
     <%= data["price"] %>
 </ul>
 
-<form action="/procura/<%= data.id%>?_method=DELETE" method="POST">
-	<button class="btn btn-danger">Delete</button>
-</form>
+
+	<form id="delete" action="/procura/<%= data._id%>?_method=DELETE" method="POST">
+		<button class="btn btn-danger">Deletar</button>
+	</form>
+
+	<a class="btn btn-warning" href="/procura/<%=data._id%>/editar">Editar</a>
+
+		
+
+
 
 <% include partials/footer %>

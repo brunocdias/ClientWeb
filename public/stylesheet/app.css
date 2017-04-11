@@ -1,0 +1,31 @@
+#delete{
+	display: inline;
+}
+
+#item{
+	padding: 2px 2px 2px 2px;
+}
+
+h1{
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+}
+
+p{
+	padding: 10px;
+}
+
+.espaco{
+	padding: 20px;
+}
+
+.topo{
+	padding-top: 30px;
+}
+
+body{
+	background-color:#7FFFD4;
+}

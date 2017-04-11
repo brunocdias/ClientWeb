@@ -1,18 +1,22 @@
 <% include partials/header %>
 
-<h1>Lista de items</h1>
-
-<ul>
+<div class="jumbotron" >
+	<h1 >Lista de items</h1>
+</div>
+<div class="container">
     <% data.forEach(function(item) { %>
-      <li>
+      	<div id="item" class="container">
       	  <%= item["id"]%> - 	
           <strong>
           <%= item["name"] %>
           </strong>
           - <%=item["category"]%>
           - <%=item["price"]%>
-      </li> 
+      	</div>
     <% }) %>
-</ul>
+    <a class="btn btn-primary btn-large" href="/">Voltar</a>
+</div>
+
+
 
 <% include partials/footer %>
