@@ -1,0 +1,15 @@
+<% include partials/header %>
+	<h1>Editar item  <%= item.name %></h1>
+
+	<form action="/items/<%= item._id%>?_method=PUT" method="PUT">
+		<input type="text" name="id" value=" <%= item.id%>">
+		<input type="text" name="name" value=" <%= item.name%>">
+		<input type="text" name="category" value=" <%= item.category%>">
+		<input type="text" name="price" value=" <%= item.price%>">
+		<button>Enviar</button>
+	</form>
+
+
+
+
+<% include partials/footer %>

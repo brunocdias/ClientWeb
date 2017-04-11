@@ -1,0 +1,20 @@
+<% include partials/header %>
+
+<div class="container">
+	<header class="jumbotron">
+		<h1>Bem vindo a Lista de Compras</h1>
+
+		<h3>O que deseja fazer?</h3>
+	</header>
+
+	<a class="btn btn-primary btn-large" href="/items">Lista todos os items</a>
+	<a class="btn btn-primary btn-large" href="/items/new">Adicinar um novo produto</a>	
+
+	<form action="/procura" method="GET">
+	    <p>Procurar por algum item por ID</p>
+	    <input type="text" placeholder="item procurado" name="busca">
+	    <input type="submit">
+	</form>
+</div>
+
+<% include partials/footer %>

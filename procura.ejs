@@ -1,0 +1,13 @@
+<h1>Resultado da procura</h1>
+
+<ul>
+    <% data(function(item) { %>
+      <li>
+          
+          <%= item["name"] %>
+         
+          - <%=item["category"]%>
+      </li> 
+    <% }) %>
+</ul>
+

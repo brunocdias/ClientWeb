@@ -1,0 +1,13 @@
+<% include partials/header %>
+
+<h1>Adicione um novo item</h1>
+
+<form action="/items" method="POST">
+	<input type="text" name="id" placeholder="id">
+	<input type="text" name="name" placeholder="name">
+	<input type="text" name="category" placeholder="category">
+	<input type="text" name="price" placeholder="price">
+	<button>Enviar</button>
+</form>
+
+<% include partials/footer %>

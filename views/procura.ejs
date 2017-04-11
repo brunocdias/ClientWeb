@@ -1,0 +1,16 @@
+<% include partials/header %>
+
+<h1>Resultado da procura</h1>
+
+<ul>
+	<%= data["id"] %>
+    <%= data["name"] %>
+    <%= data["category"] %> 
+    <%= data["price"] %>
+</ul>
+
+<form action="/procura/<%= data.id%>?_method=DELETE" method="POST">
+	<button class="btn btn-danger">Delete</button>
+</form>
+
+<% include partials/footer %>
